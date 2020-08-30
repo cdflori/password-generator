@@ -5,16 +5,17 @@ In this assignment we were tasked to create a password generator. The user will 
 ## Steps
 
 1. Choose Password Length
-   When the user clicks "Generate Password" they will receive their first prompt, asking: "How many characters would you like your password to contain (between 8 - 128)?"
+   
+   When the user clicks "Generate Password" they will receive their first prompt, asking: "How many characters would you like your password    to contain (between 8 - 128)?"
 
    The user will enter a numerical value between 8-128, then click "okay" to continue. 
-   If the user inputs a numerical value less than 8, they will be prompted with the message, "You need more characters! Choose between 8 and 128 characters"
+   If the user inputs a numerical value less than 8, they will be prompted with the message, "You need more characters! Choose between 8      and 128 characters"
 
    Once the user selects a valid numerical value for character length, they will be shown their next prompted question.
 
    Image Snippet: 
 
-   ![Password Length Prompt](/assets/images/charlength.png)
+   ![Password Length Prompt](Develop/assets/images/charlength.png)
 
    Code: 
    let password = "";
@@ -24,15 +25,16 @@ In this assignment we were tasked to create a password generator. The user will 
      passwordLength = parseInt(prompt("You need more characters! Choose between 8 and 128 characters"));
     }
 
-    2. Upper Case Letters
-        The second question the user will be prompted with is, "Should your password contain upper case letters?"
+2. Upper Case Letters
+    
+    The second question the user will be prompted with is, "Should your password contain upper case letters?"
 
     The user will either confirm (Okay) or not confirm (cancel) to make their selection.
 
     Once the user selects their choice regarding upper case letters, they will be shown their next prompted question.
 
     Image Snippet:
-        ![Upper Case Letter Prompt](/assets/images/uppercase.png)
+        ![Upper Case Letter Prompt](Develop/assets/images/uppercase.png)
 
    Code:
    const confirmUpperChar = confirm("Should your password contain upper case letters?");
@@ -41,15 +43,16 @@ In this assignment we were tasked to create a password generator. The user will 
      possiblePassword = possiblePassword.concat(alphaUpper);
     }
 
-    3. Lower Case Letters
-        The third question the user will be prompted with is, "Should your password contain lower case letters?"
+3. Lower Case Letters
+    
+    The third question the user will be prompted with is, "Should your password contain lower case letters?"
 
     The user will either confirm (Okay) or not confirm (cancel) to make their selection.
 
     Once the user selects their choice regarding lower case letters, they will be shown their next prompted question.
 
     Image Snippet:
-        ![Lower Case Letter Prompt](/assets/images/lowercase.png)
+        ![Lower Case Letter Prompt](Develop/assets/images/lowercase.png)
 
     Code:
     const confirmLowerChar = confirm("Should your password contain lower case letters?");
@@ -58,8 +61,9 @@ In this assignment we were tasked to create a password generator. The user will 
       possiblePassword = possiblePassword.concat(alphaLower);
     }
 
-    4. Numbers
-        The fourth question the user will be prompted with is, "Should your password contain numbers?"
+4. Numbers
+    
+    The fourth question the user will be prompted with is, "Should your password contain numbers?"
 
     The user will either confirm (Okay) or not confirm (cancel) to make their selection.
 
@@ -67,7 +71,7 @@ In this assignment we were tasked to create a password generator. The user will 
 
     Image Snippet:
 
-    ![Number Prompt](/assets/images/numbers.png)
+    ![Number Prompt](Develop/assets/images/numbers.png)
 
     Code:
     const confirmNumber = confirm("Should your password contain numbers?");
@@ -76,8 +80,9 @@ In this assignment we were tasked to create a password generator. The user will 
       possiblePassword = possiblePassword.concat(number);
     }
 
-    5. Special Characters
-        The final question the user will be prompted with is, "Should your password contain special characters?"
+5. Special Characters
+    
+    The final question the user will be prompted with is, "Should your password contain special characters?"
 
     The user will either confirm (Okay) or not confirm (cancel) to make their selection.
 
@@ -85,7 +90,7 @@ In this assignment we were tasked to create a password generator. The user will 
 
     Image Snippet:
 
-    ![Special Character Prompt](/assets/images/specialchar.png)
+    ![Special Character Prompt](Develop/assets/images/specialchar.png)
 
 
     Code:
@@ -97,7 +102,7 @@ In this assignment we were tasked to create a password generator. The user will 
 
     ***The password generator will always ask each of these five questions above. The password generated will always be random and include the user's selections. 
 
-    ![Generated Password](/assets/images/generatedpass.png)
+    ![Generated Password](Develop/assets/images/generatedpass.png)
 
     ***The password will be reset if the user refreshes the page or clicks "generate password" again. 
 
