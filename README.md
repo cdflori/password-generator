@@ -14,7 +14,7 @@ In this assignment we were tasked to create a password generator. The user will 
 
         Image Snippet: 
 
-        ![Password Length Prompt] (/assets/images/charlength.png)
+        ![Password Length Prompt](/Develop/assets/images/charlength.png)
 
         Code: 
         let password = "";
