@@ -114,7 +114,7 @@ https://github.com/cdflori/password-generator
 
 ## Deployed Generator
 
-
+https://cdflori.github.io/password-generator/
 
 
 
